@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ background-color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+ .bg-custom-image {
+ 
+  background-image: url('../../public/Icons/Mask group.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 100px 75px;
+  
   }
+.bgcoloropacity{
+  background-image: linear-gradient(75.06deg, #2F73F2 0%, rgba(47, 115, 242, 0) 66.21%); 
+  /* opacity: 50%; */
+}
+  .text-shadowss{
+    text-shadow: 0px 8px 33px rgba(0, 0, 0, 0.85);
+  }
+  .Destinationimg1{
+    background-image: url('../../public/Icons/Rectangle1.svg');
+   width: 570px;
+   height: 584px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Destinationimg2{
+    background-image: url('../../public/Icons/Rectangle2.svg');
+     width: 570px;
+     height: 279px;
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+.Destinationimg3{
+  background-image: url('../../public/Icons/Rectangle3.svg');
+  width: 270px;
+  height: 279px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Destinationimg4{
+  background-image: url('../../public/Icons/Rectangle4.svg');
+  width: 270px;
+  height: 279px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
