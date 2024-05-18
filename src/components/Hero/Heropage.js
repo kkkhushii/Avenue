@@ -48,8 +48,8 @@ function Heropage() {
               <>
                 <h1 className="text-white font-bold text-[100px] text-shadowss w-fit ">
                   CANADA
-                  {/* <span className="text-customblue rounded-full">.</span> */}
-                  <span className="rounded-full inline-block w-4 h-4 bg-customblue"></span>
+
+                  <span className="rounded-full inline-block w-4 h-4 bg-customblue ml-1"></span>
 
 
                 </h1>
