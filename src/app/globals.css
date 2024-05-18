@@ -19,12 +19,12 @@
   .text-shadowss{
     text-shadow: 0px 8px 33px rgba(0, 0, 0, 0.85);
   }
-  .Destinationimg1{
+   /* .Destinationimg1{
     background-image: url('../../public/Icons/Rectangle1.svg');
-   width: 570px;
-   height: 584px;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+ 
   }
   .Destinationimg2{
     background-image: url('../../public/Icons/Rectangle2.svg');
@@ -32,6 +32,8 @@
      height: 279px;
      background-repeat: no-repeat;
      background-size: cover;
+     object-fit: cover;
+   
   }
 .Destinationimg3{
   background-image: url('../../public/Icons/Rectangle3.svg');
@@ -46,6 +48,10 @@
   height: 279px;
   background-repeat: no-repeat;
   background-size: cover;
+}  */
+
+.object-cover{
+  object-fit: cover;
 }
 
 .menu li
