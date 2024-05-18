@@ -36,45 +36,45 @@ function Header() {
             <li>
               <Link href="#">Travelers</Link>
             </li>
-            <li>
-              <div className="relative inline-block ">
-                <button
-                  onClick={toggleDropdown}
-                  className="   rounded-lg  focus:outline-none menu"
+
+            <div className="relative inline-block ">
+              <button
+                onClick={toggleDropdown}
+                className="custom-button  rounded-lg  focus:outline-none "
+              >
+                Pages
+                <svg
+                  className={`custom-svg inline-block h-4 w-4 ml-2 transition-transform transform ${isOpen ? 'rotate-180' : 'rotate-0'
+                    }`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  Pages
-                  <svg
-                    className={`inline-block h-4 w-4 ml-2 transition-transform transform ${isOpen ? 'rotate-180' : 'rotate-0'
-                      }`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              {isOpen && (
+                <div className="absolute z-10 mt-2 w-56 bg-white rounded-lg shadow-lg">
+                  <Link href='#'
+                    onClick={() => handleOptionClick('Packages')}
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer"
                   >
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </button>
-                {isOpen && (
-                  <div className="absolute z-10 mt-2 w-56 bg-white rounded-lg shadow-lg">
-                    <a
-                      onClick={() => handleOptionClick('Packages')}
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer"
-                    >
-                      Packages
-                    </a>
-                    <a
-                      onClick={() => handleOptionClick('Package Detail')}
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer"
-                    >
-                      Package Detail
-                    </a>
-                  </div>
-                )}
-              </div>
-            </li>
+                    Packages
+                  </Link>
+                  <Link href='#'
+                    onClick={() => handleOptionClick('Package Detail')}
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer"
+                  >
+                    Package Detail
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <li>
 
               <Link href="#">Blog</Link>

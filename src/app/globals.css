@@ -48,14 +48,6 @@
   background-size: cover;
 }
 
-/* .buttoncustomcolor {
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-}
-
-.buttoncustomcolor:hover {
-  background-color: #1e40af; 
-  transform: translateY(-2px);
-}  */
 
 .menu li
  {
@@ -68,4 +60,12 @@
   color: rgba(47, 115, 242, 1);
   transform: scale(1.1);
   text-shadow: none;
+}
+
+.custom-button {
+  @apply hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110;
+}
+
+.custom-svg {
+  @apply transition-transform transform;
 }

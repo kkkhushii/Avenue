@@ -63,13 +63,13 @@ function Heropage() {
 
             <div className=" rounded-[24px] col-span-4 shadow-customboxshadow  bg-white">
               <div className="p-[30px]">
-                <div className="flex items-center pb-4">
+                <div className="flex items-center pb-[30px]">
                   <h4 className="font-customFont font-bold text-[26px] text-customcol">
                     Plan your Vacation
                   </h4>
                 </div>
                 <form onSubmit={handleSubmit}>
-                  <div className="border-b-2 py-4 flex flex-col">
+                  <div className="border-b-2 pb-[26px] flex flex-col">
                     <label
                       htmlFor="destination"
                       className="text-lablecolor font-normal text-base font-customFont"
@@ -82,7 +82,7 @@ function Heropage() {
                       name="destination"
                       value={formData.destination}
                       onChange={handleChange}
-                      className="font-mediumtext-[20px] text-customcol focus:outline-none focus:border-none"
+                      className="font-medium text-[20px] text-customcol focus:outline-none focus:border-none"
                     >
                       <option value="">Select Destination</option>
                       <option value="United Arab Emirates">
@@ -93,7 +93,7 @@ function Heropage() {
                       <option value="Australia">Australia</option>
                     </select>
                   </div>
-                  <div className="border-b-2 py-4 flex flex-col">
+                  <div className="border-b-2  pt-[15px] pb-[26px] flex flex-col">
                     <label
                       htmlFor="vacationMood"
                       className="text-lablecolor font-normal text-base font-customFont"
@@ -106,7 +106,7 @@ function Heropage() {
                       name="vacationMood"
                       value={formData.vacationMood}
                       onChange={handleChange}
-                      className="font-mediumtext-[20px] text-customcol focus:outline-none focus:border-none"
+                      className="font-medium text-[20px] text-customcol focus:outline-none focus:border-none"
                     >
                       <option value="">Select Vacation Mood</option>
                       <option value="Hiking Adventure">Hiking Adventure</option>
@@ -118,7 +118,7 @@ function Heropage() {
                     </select>
                   </div>
 
-                  <div className="py-4">
+                  <div className="pt-[15px]">
                     <div className="grid grid-cols-2 gap-6">
                       <div className="flex flex-col">
                         <label
@@ -134,7 +134,7 @@ function Heropage() {
                           value={formData.date}
                           onChange={handleChange}
                           placeholder="mm/dd/yyyy"
-                          className="font-mediumtext-[20px] text-customcol focus:outline-[#93c5fd]"
+                          className="font-medium text-[20px] text-customcol focus:outline-[#93c5fd]"
                         />
                       </div>
                       <div className="flex flex-col">
@@ -150,15 +150,15 @@ function Heropage() {
                           name="passengers"
                           value={formData.passengers}
                           onChange={handleChange}
-                          className="font-mediumtext-[20px] text-customcol focus:outline-[#93c5fd]"
+                          className="font-medium text-[20px] text-customcol focus:outline-[#93c5fd]"
                         />
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div className="mt-[40px]">
                     <button
                       type="submit"
-                      className="w-full bg-customblue rounded-[8px] py-[15px] px-[100px] text-white font-mediumtext-base cursor-pointer
+                      className="w-full bg-customblue rounded-[8px] py-[15px] px-[100px] text-white font-medium text-base cursor-pointer
                       hover:text-customblue hover:border-customblue hover:bg-white border border-transparent transition-colors duration-300"
 
                     >
