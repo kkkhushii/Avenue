@@ -4,6 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+
   ],
   theme: {
     extend: {
@@ -12,24 +13,26 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily:{
-        customFont:['DM Sans','serif'],
+      fontFamily: {
+        sans: ['"DM Sans"', 'sans-serif'],
       },
-      colors:{
-        customcol:'rgba(16, 45, 71, 1)',
-        customblue:'rgba(47, 115, 242, 1)',
-        lablecolor:'rgba(84, 117, 147, 1)'
+      colors: {
+        customcol: 'rgba(16, 45, 71, 1)',
+        customblue: 'rgba(47, 115, 242, 1)',
+        lablecolor: 'rgba(84, 117, 147, 1)'
       },
       boxShadow: {
         customshadow: '0px 8px 33.4px 0px rgba(0, 0, 0, 0.85)',
-        customboxshadow:'0px 4px 50px 0px rgba(47, 115, 242, 0.15)',
+        customboxshadow: '0px 4px 50px 0px rgba(47, 115, 242, 0.15)',
 
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(75.06deg, #2F73F2 0%, rgba(47, 115, 242, 0) 66.21%)',
       },
-    
+
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 };

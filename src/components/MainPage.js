@@ -6,9 +6,9 @@ import Destination from '../components/Destination/Destination'
 function MainPage() {
   return (
     <div>
-     <Header/>
-     <Heropage/>
-     <Destination/>
+      <Header />
+      <Heropage />
+      <Destination />
     </div>
   )
 }
