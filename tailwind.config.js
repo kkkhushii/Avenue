@@ -19,7 +19,8 @@ module.exports = {
       colors: {
         customcol: 'rgba(16, 45, 71, 1)',
         customblue: 'rgba(47, 115, 242, 1)',
-        lablecolor: 'rgba(84, 117, 147, 1)'
+        lablecolor: 'rgba(84, 117, 147, 1)',
+        colorbg: 'rgba(192, 213, 251, 1)'
       },
       boxShadow: {
         customshadow: '0px 8px 33.4px 0px rgba(0, 0, 0, 0.85)',
@@ -36,3 +37,6 @@ module.exports = {
 
   ],
 };
+
+
+//customroundcol: 'rgba(192, 213, 251, 1)',

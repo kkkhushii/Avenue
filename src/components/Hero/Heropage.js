@@ -41,7 +41,7 @@ function Heropage() {
 
   return (
     <div className="max-w-[1370px] w-full mx-auto  ">
-      <div className="bg-custom-image mt-[20px] rounded-[24px] overflow-hidden">
+      <div className="bg-custom-image mt-[20px] rounded-[24px] overflow-hidden bg-no-repeat bg-cover">
         <div className="bgcoloropacity">
           <div className="grid  grid-cols-12 justify-between gap-[4px]  ">
             <div className="flex flex-col col-span-8 justify-end flex-1">

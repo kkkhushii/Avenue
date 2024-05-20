@@ -1,65 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); */
 
  .bg-custom-image {
- 
   background-image: url('../../public/Icons/Mask group.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  
 }
+
 .bgcoloropacity{
   background-image: linear-gradient(75.06deg, rgba(47, 115, 242, 0.4) 0%, rgba(47, 115, 242, 0) 66.21%); 
-
   padding: 90px 100px 75px;
-  /* opacity: 50%; */
 }
   .text-shadowss{
     text-shadow: 0px 8px 33px rgba(0, 0, 0, 0.85);
   }
-   /* .Destinationimg1{
-    background-image: url('../../public/Icons/Rectangle1.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
- 
-  }
-  .Destinationimg2{
-    background-image: url('../../public/Icons/Rectangle2.svg');
-     width: 570px;
-     height: 279px;
-     background-repeat: no-repeat;
-     background-size: cover;
-     object-fit: cover;
    
-  }
-.Destinationimg3{
-  background-image: url('../../public/Icons/Rectangle3.svg');
-  width: 270px;
-  height: 279px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.Destinationimg4{
-  background-image: url('../../public/Icons/Rectangle4.svg');
-  width: 270px;
-  height: 279px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}  */
-
-.object-cover{
-  object-fit: cover;
-}
-
 .menu li
  {
   position: relative;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
 
 .menu li:hover {
   color: rgba(47, 115, 242, 1);
@@ -73,4 +32,30 @@
 
 .custom-svg {
   @apply transition-transform transform;
+}
+
+button{
+  position: relative;
+  overflow:hidden;
+  z-index: 1;
+  transition: 0.08s ease-in;
+}
+
+.fill:hover {
+  color: whitesmoke;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #2f73f2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top 0.09s ease-in;
+}
+.fill:hover:before {
+  top: 0;
 }
