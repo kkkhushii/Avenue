@@ -40,8 +40,8 @@ function Heropage() {
   };
 
   return (
-    <div className="max-w-[1370px] w-full mx-auto  ">
-      <div className="bg-custom-image mt-[20px] rounded-[24px] overflow-hidden bg-no-repeat bg-cover">
+    <div className="max-w-[1370px] w-full mx-auto">
+      <div className="bg-custom-image  mt-[20px] rounded-[24px] overflow-hidden bg-no-repeat bg-cover">
         <div className="bgcoloropacity">
           <div className="grid  grid-cols-12 justify-between gap-[4px]  ">
             <div className="flex flex-col col-span-8 justify-end flex-1">
@@ -53,7 +53,8 @@ function Heropage() {
               </>
               <div className="flex items-center gap-4">
                 <div>
-                  <Image src="Icons\Group 380.svg" width={133} height={59} />
+                  <Image src="Icons\Frame 377.svg" width={77} height={29} />
+                  <p className="font-medium text-lg text-white">Flight + 4 Nights</p>
                 </div>
                 <span className=" text-[3.125rem] font-bold text-shadowss w-fit text-white">
                   $350
@@ -171,7 +172,7 @@ function Heropage() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

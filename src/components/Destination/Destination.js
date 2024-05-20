@@ -9,7 +9,7 @@ function Destination() {
                     <div className="col-span-6 relative">
                         <div className="rounded-[24px] overflow-hidden h-full">
                             <img
-                                src="https://svgshare.com/i/16Cb.svg"
+                                src="Icons\Rectangle1.jpg"
                                 alt="Hiking Adventure"
                                 className="w-full h-full object-cover transition duration-500 
                                 hover:scale-110"
@@ -23,11 +23,10 @@ function Destination() {
 
 
                     <div className="col-span-6 grid grid-cols-12 gap-6">
-
                         <div className="col-span-12 mb-[30px] h-full relative">
                             <div className="rounded-[24px] overflow-hidden h-full">
                                 <img
-                                    src="Icons\Rectangle2.svg"
+                                    src="Icons\Rectangle2.jpg"
                                     alt="Top Image"
                                     className="w-full h-full object-cover  transition duration-500 
                                     hover:scale-110"
@@ -43,7 +42,7 @@ function Destination() {
                         <div className="col-span-6 h-full relative">
                             <div className="rounded-[24px] overflow-hidden mb-[30px] h-full">
                                 <img
-                                    src="Icons\Rectangle3.svg"
+                                    src="Icons\Rectangle3.jpg"
                                     alt="Bottom Left Image"
                                     className="w-full h-full object-cover  transition duration-500 
                                     hover:scale-110"
@@ -57,7 +56,7 @@ function Destination() {
                         <div className="col-span-6 h-full relative">
                             <div className="rounded-[24px] overflow-hidden mb-[30px] h-full">
                                 <img
-                                    src="Icons\Rectangle4.svg"
+                                    src="Icons\Rectangle4.jpg"
                                     alt="Bottom Right Image"
                                     className="w-full h-full object-cover  transition duration-500 
                                     hover:scale-110"
@@ -75,7 +74,6 @@ function Destination() {
 
                 </div>
             </div >
-
         </div >
     )
 }

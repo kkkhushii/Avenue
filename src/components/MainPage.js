@@ -11,6 +11,7 @@ function MainPage() {
       <Heropage />
       <Destination />
       {/* <Feature /> */}
+
     </div>
   )
 }

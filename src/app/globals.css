@@ -3,7 +3,7 @@
 @tailwind utilities;
 
  .bg-custom-image {
-  background-image: url('../../public/Icons/Mask group.svg');
+  background-image: url('../../public/Icons/Mask group.jpg');
 }
 
 .bgcoloropacity{
