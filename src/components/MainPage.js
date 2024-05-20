@@ -10,7 +10,7 @@ function MainPage() {
       <Header />
       <Heropage />
       <Destination />
-      {/* <Feature /> */}
+      <Feature />
 
     </div>
   )
