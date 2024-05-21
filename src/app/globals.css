@@ -54,9 +54,23 @@ button{
   right: 0;
   top: 100%;
   z-index: -1;
-  transition: top 0.09s ease-in;
+  transition: top 0.3s ease-in;
 }
 .fill:hover:before {
   top: 0;
 }
 
+.feature-container {
+  position: relative;
+}
+
+.feature-container::before {
+  content: "";
+  position: absolute;
+  width: 647px;
+  height: 647px;
+  left: -149px;
+  bottom: 0;
+  background: #DAE7FF;
+  filter: blur(250px);
+}

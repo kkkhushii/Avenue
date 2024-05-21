@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Destination() {
@@ -24,14 +25,20 @@ function Destination() {
 
                     <div className="col-span-6 grid grid-cols-12 gap-6">
                         <div className="col-span-12 mb-[30px] h-full relative">
+
+
                             <div className="rounded-[24px] overflow-hidden h-full">
-                                <img
-                                    src="Icons\Rectangle2.jpg"
-                                    alt="Top Image"
-                                    className="w-full h-full object-cover  transition duration-500 
-                                    hover:scale-110"
-                                />
+                                <Link href='#'>
+                                    <img
+                                        src="Icons\Rectangle2.jpg"
+                                        alt="Top Image"
+                                        className="w-full h-full object-cover  transition duration-500 
+                                     hover:scale-110"
+                                    />
+                                </Link>
+
                             </div>
+
                             <div className="absolute bottom-0  p-[42px]  ">
                                 <h4 className="font-bold text-2xl text-white">Outdoor Adventure</h4>
                                 <p className="text-white text-white text-lg font-medium ">418 Destinations</p>
