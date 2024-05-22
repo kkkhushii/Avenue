@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
  .bg-custom-image {
   background-image: url('../../public/Icons/Mask group.jpg');
 }
@@ -74,3 +77,30 @@ button{
   background: #DAE7FF;
   filter: blur(250px);
 }
+
+.country-entry:nth-of-type(2n) {
+  padding-top: 60px;
+}
+.country-name::before {
+  @apply absolute content-[''] top-0 left-[-29px] w-[2px] h-[25px] bg-customblue;
+}
+
+
+/* .country-entry:nth-child(even) .country-name::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -29px;
+  width: 2px;
+  height: 25px;
+  background-color: #2f73f2;
+} */
+/* // .country-name::before{
+  //     position: absolute;
+  //     content: '';
+  //     top: 0;
+  //     left: -29px;
+  //     width: 2px;
+  //     height: 25px;
+  //     background-color: #2f73f2;
+  //   } */
