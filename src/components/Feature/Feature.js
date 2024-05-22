@@ -99,9 +99,6 @@ function Feature() {
                             </button>
                         </div>
                     </div>
-
-
-
                 </div>
 
             </div>

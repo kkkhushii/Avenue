@@ -19,33 +19,14 @@ function PopularCountries() {
     ];
 
     return (
-        // <div className='py-8'>
-        //     <div className='max-w-[1200px] mx-auto px-6'>
-        //         <h2 className='text-4xl font-bold text-customcol mb-7 pb-1'>Popular Countries</h2>
-        //         <div className='flex flex-wrap'>
-        //             <div className=''>
-        //                 <div className='pl-7 border-l-2 border-l-customColor'>
-        //                     <div className=' mb-6'>
-        //                         <img src='\Icons\france 1.svg' />
-        //                     </div>
-        //                     <div>
-        //                         <h4 className='mb-1 text-2xl text-customcol font-bold'>France</h4>
-        //                     </div>
-        //                     <p className='mb-1 text-base font-normal  text-lablecolor'>1500 Offers</p>
-
-        //                 </div>
-
-        //             </div>
-
-        //         </div>
-        //     </div>
-
-        // </div>
-
-        <div className='lg:py-14  py-8'>
+        <div className='lg:mt-[121px]'>
             <div className='max-w-[1200px] mx-auto px-6'>
-                <h2 className='text-4xl font-bold text-customcol mb-7 pb-1'>Popular Countries</h2>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12'>
+                <div className='flex justify-between'>
+                    <h2 className='text-4xl font-bold text-customcol mb-[61px]'>Popular Countries</h2>
+                    <p className='font-normal text-lg text-lablecolor'>Adventure Place</p>
+                </div>
+
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[70px]'>
                     {countries.map((country, index) => (
                         <div key={index} className='pl-7 border-l-2 border-l-customColor country-entry'>
 
@@ -66,4 +47,3 @@ function PopularCountries() {
 
 export default PopularCountries
 
-  

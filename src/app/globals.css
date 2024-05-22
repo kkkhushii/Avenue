@@ -1,9 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 
+
+body{
+  font-family: "DM Sans", sans-serif;
+}
 
  .bg-custom-image {
   background-image: url('../../public/Icons/Mask group.jpg');
@@ -13,8 +20,8 @@
   background-image: linear-gradient(75.06deg, rgba(47, 115, 242, 0.4) 0%, rgba(47, 115, 242, 0) 66.21%); 
   padding: 90px 100px 75px;
 }
-  .text-shadowss{
-    text-shadow: 0px 8px 33px rgba(0, 0, 0, 0.85);
+  .text-custom-shadow{
+    text-shadow: 0px 8px 33px  rgba(0, 0, 0, 0.85);
   }
    
 .menu li
@@ -25,12 +32,11 @@
 
 .menu li:hover {
   color: rgba(47, 115, 242, 1);
-  transform: scale(1.1);
   text-shadow: none;
 }
 
 .custom-button {
-  @apply hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110;
+  @apply hover:text-blue-500 transition-all duration-300 ease-in-out transform;
 }
 
 .custom-svg {

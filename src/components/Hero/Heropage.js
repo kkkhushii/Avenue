@@ -40,23 +40,24 @@ function Heropage() {
   };
 
   return (
-    <div className="max-w-[1370px] w-full mx-auto">
+    <div className="max-w-[1370px] relative  w-full mx-auto">
       <div className="bg-custom-image  mt-[20px] rounded-[24px] overflow-hidden bg-no-repeat bg-cover">
+        <img src="Icons\Group 79.11.svg" alt="img" className="absolute top-[167px] left-[-10px] " />
         <div className="bgcoloropacity">
-          <div className="grid  grid-cols-12 justify-between gap-[4px]  ">
-            <div className="flex flex-col col-span-8 justify-end flex-1">
+          <div className="grid  grid-cols-12 justify-between gap-[4px] ">
+            <div className="flex flex-col col-span-8 justify-end flex-1 ">
               <>
-                <h1 className="text-white font-bold text-[100px] text-shadowss w-fit ">
+                <h1 className="text-white font-bold text-[100px]  w-fit text-custom-shadow">
                   CANADA
                   <span className="rounded-full inline-block w-4 h-4 bg-customblue ml-1"></span>
                 </h1>
               </>
-              <div className="flex items-center gap-4">
-                <div>
-                  <Image src="Icons\Frame 377.svg" width={77} height={29} />
+              <div className="flex items-center gap-3.5">
+                <div className="flex flex-col gap-2">
+                  <Image src="Icons\Frame 377.svg" width={76} height={29} />
                   <p className="font-medium text-lg text-white">Flight + 4 Nights</p>
                 </div>
-                <span className=" text-[3.125rem] font-bold text-shadowss w-fit text-white">
+                <span className="text-[51px] font-bold text-custom-shadow w-fit text-white">
                   $350
                 </span>
               </div>
@@ -157,14 +158,7 @@ function Heropage() {
                     </div>
                   </div>
                   <div className="mt-[40px]">
-                    <button
-                      type="submit"
-                      className="w-full bg-customblue rounded-[8px] py-[15px] px-[100px] text-white font-medium text-base cursor-pointer
-                      hover:text-customblue hover:border-customblue hover:bg-white border border-transparent transition-colors duration-300"
-
-                    >
-                      Search Now
-                    </button>
+                    <button className='text-customblue bg-white border font-medium text-lg  rounded-[8px] py-[15px] px-[102px] border-customblue fill' > Search Now</button>
                   </div>
                 </form>
               </div>

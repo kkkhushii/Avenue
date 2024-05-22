@@ -31,7 +31,7 @@ function Header() {
             ></Image>
           </Link>
         </div>
-        <div className="font-normal text-lg leading-[22px] text-customcol">
+        <div className="font-normal text-[17px] text-customcol">
           <ul className="flex flex-row gap-[50px] menu">
             <li>
               <Link href="#">Travelers</Link>
@@ -40,7 +40,7 @@ function Header() {
             <div className="relative inline-block ">
               <button
                 onClick={toggleDropdown}
-                className="custom-button  rounded-lg  focus:outline-none "
+                className="custom-button  rounded-lg focus:outline-none "
               >
                 Pages
                 <svg
@@ -58,25 +58,23 @@ function Header() {
                 </svg>
               </button>
               {isOpen && (
-                <div className="absolute z-10 mt-2 w-56 bg-white rounded-lg shadow-lg">
+                <div className="absolute z-10 mt-2 w-56 bg-white rounded-lg shadow-lg ">
                   <Link href='#'
                     onClick={() => handleOptionClick('Packages')}
-                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer custom-button "
                   >
                     Packages
                   </Link>
                   <Link href='#'
                     onClick={() => handleOptionClick('Package Detail')}
-                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 cursor-pointer custom-button "
                   >
                     Package Detail
                   </Link>
                 </div>
               )}
             </div>
-
             <li>
-
               <Link href="#">Blog</Link>
             </li>
             <li>
@@ -86,10 +84,7 @@ function Header() {
           </ul>
         </div>
         <div>
-          <button className="font-normal text-lg leading-[22px] text-white bg-customblue rounded-[8px] py-[13px] px-[24px] buttoncustomcolor
-            hover:text-customblue hover:border-customblue hover:bg-white border border-transparent transition-colors duration-300">
-            Contact Us
-          </button>
+          <button className='text-customblue bg-white border font-normal rounded-[8px]  text-[17px] py-[13px] px-[24px] border-customblue fill' >Contact Us</button>
         </div>
       </div>
     </>

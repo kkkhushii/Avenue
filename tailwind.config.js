@@ -23,9 +23,11 @@ module.exports = {
         colorbg: 'rgba(192, 213, 251, 1)'
       },
       boxShadow: {
-        customshadow: '0px 8px 33.4px 0px rgba(0, 0, 0, 0.85)',
         customboxshadow: '0px 4px 50px 0px rgba(47, 115, 242, 0.15)',
 
+      },
+      textShadow: {
+        'custom': '0px 8px 33.4px rgba(0, 0, 0, 0.85)',
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(75.06deg, #2F73F2 0%, rgba(47, 115, 242, 0) 66.21%)',
