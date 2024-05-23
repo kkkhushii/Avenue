@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Blog() {
 
@@ -33,17 +34,20 @@ function Blog() {
                 <div className='grid gap-[30px] md:grid-cols-2 lg:grid-cols-3'>
                     {Data.map((article, index) => (
                         <div key={index} className=' h-full w-full  overflow-hidden'>
-                            <Image
-                                className='object-cover rounded-[24px] overflow-hidden mb-[31px]'
-                                src={article.img}
-                                alt={article.name}
-                                width={500}
-                                height={0}
+                            <Link href='#'>
+                                <Image
+                                    className='object-cover rounded-[24px] overflow-hidden mb-[31px]'
+                                    src={article.img}
+                                    alt={article.name}
+                                    width={500}
+                                    height={0}
 
-                            />
+                                />
+                            </Link>
                             <div>
-                                <h3 className='text-base font-medium text-customblue mb-[3px]'>{article.name}</h3>
-                                <p className='font-medium text-[22px] text-customcol mb-[8px]'>{article.description}</p>
+                                <Link href='#'>
+                                    <h3 className='text-base font-medium text-customblue mb-[3px]'>{article.name}</h3>
+                                    <p className='font-medium text-[22px] text-customcol mb-[8px]'>{article.description}</p></Link>
                                 <p className='font-normal  text-grayclr mb-[48px]'>{article.time}</p>
                             </div>
 
@@ -51,7 +55,7 @@ function Blog() {
                     ))}
                 </div>
                 <div className='text-center'>
-                    <button className='text-customblue bg-white border font-medium text-lg   py-[14px] px-[36px] rounded-lg border-customblue fill' >View More</button> 
+                    <button className='text-customblue bg-white border font-medium text-lg   py-[14px] px-[36px] rounded-lg border-customblue fill' >View More</button>
                 </div>
             </div>
         </div>

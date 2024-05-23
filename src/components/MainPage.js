@@ -7,6 +7,8 @@ import TourPackages from '../components/TourPackages/TourPackages'
 import PopularCountries from '../components/PopularContries/PopularCountries'
 import Testimonials from '../components/Testimonials/Testimonials'
 import Blog from '../components/Blog/Blog'
+import Footer from '../components/Footer/Footer'
+import Footer2 from '../components/Footer/Footer2'
 
 
 function MainPage() {
@@ -24,6 +26,8 @@ function MainPage() {
         <PopularCountries />
         <Testimonials />
         <Blog />
+        <Footer />
+        <Footer2 />
       </div>
     </div>
   )

@@ -43,7 +43,7 @@ function Testimonials() {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonialsData.length - 1 : prevIndex - 1));
     };
     return (
-        <div className='pt-[116px]'>
+        <div className='mt-[116px]'>
             <div className='max-w-[1200px] mx-auto px-6'>
                 <div className='flex flex-wrap md:flex-nowrap gap-[79px]'>
                     <div className='w-full md:w-1/2 '>
@@ -71,9 +71,9 @@ function Testimonials() {
                                                             <span key={i} className=' text-customblue w-[12px] h-[12px] '>&#9733;</span>
                                                         ))}
                                                     </div>
-                                                    <div className='flex gap-[213px]  '>
+                                                    <div className='flex gap-[213px]'>
                                                         <div>
-                                                            <p className='font-medium text-[21px] text-customcol'>{testimonial.name}</p>
+                                                            <p className='font-medium text-[21px] text-customcol mt-[8px] cursor-default transition-colors duration-300 hover:text-blue-600'>{testimonial.name}</p>
                                                         </div>
 
                                                         <div className="flex justify-center  gap-[16px]">
