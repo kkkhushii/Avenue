@@ -6,6 +6,8 @@ import Feature from '../components/Feature/Feature'
 import TourPackages from '../components/TourPackages/TourPackages'
 import PopularCountries from '../components/PopularContries/PopularCountries'
 import Testimonials from '../components/Testimonials/Testimonials'
+import Blog from '../components/Blog/Blog'
+
 
 function MainPage() {
   return (
@@ -21,6 +23,7 @@ function MainPage() {
         <TourPackages />
         <PopularCountries />
         <Testimonials />
+        <Blog />
       </div>
     </div>
   )

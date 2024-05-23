@@ -9,14 +9,6 @@ function Destination() {
                 <div className="grid grid-cols-12 gap-6 mb-[30px]">
                     <div className="col-span-6 relative">
                         <Link href="#">
-
-                            {/* <div className="rounded-[24px] overflow-hidden h-full"> */}
-                            {/* <img
-                                    src="Icons\Rectangle1.jpg"
-                                    alt="Hiking Adventure"
-                                    className="w-full h-full object-cover transition duration-500 
-                                hover:scale-110"
-                                /> */}
                             <div className="rounded-[24px] overflow-hidden h-full ">
 
                                 <img
@@ -28,7 +20,9 @@ function Destination() {
                             </div>
                         </Link>
                         <div className="absolute bottom-0 pb-[53px] pl-[53px]">
-                            <h4 className="font-bold text-2xl text-white">Hiking Adventure</h4>
+                            <Link href='#'>
+                                <h4 className="font-bold text-2xl text-white">Hiking Adventure</h4>
+                            </Link>
                             <p className="text-white text-lg font-medium">306 Destinations</p>
                         </div>
                     </div>
@@ -49,7 +43,9 @@ function Destination() {
                                 </div>
                             </Link>
                             <div className="absolute bottom-0   pl-[42px] pb-[42px] ">
-                                <h4 className="font-bold text-2xl text-white">Outdoor Adventure</h4>
+                                <Link href='#'>
+                                    <h4 className="font-bold text-2xl text-white">Outdoor Adventure</h4>
+                                </Link>
                                 <p className="text-white text-white text-lg font-medium ">418 Destinations</p>
                             </div>
                         </div>
@@ -67,7 +63,9 @@ function Destination() {
                                 </div>
                             </Link>
                             <div className="absolute bottom-0   pl-[42px] pb-[42px]">
-                                <h4 className="font-bold text-2xl text-white">Beach Adventure</h4>
+                                <Link href='#'>
+                                    <h4 className="font-bold text-2xl text-white">Beach Adventure</h4>
+                                </Link>
                                 <p className="text-white text-white text-lg font-medium">85 Destinations</p>
                             </div>
                         </div>
@@ -85,7 +83,9 @@ function Destination() {
                                 </div>
                             </Link>
                             <div className="absolute bottom-0  pl-[42px] pb-[42px] ">
-                                <h4 className="font-bold text-2xl text-white">Pilgrimage Destination</h4>
+                                <Link href='#'>
+                                    <h4 className="font-bold text-2xl text-white">Pilgrimage Destination</h4>
+                                </Link>
                                 <p className="text-white text-white text-lg font-medium">29 Destinations</p>
                             </div>
                         </div>

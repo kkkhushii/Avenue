@@ -4,17 +4,6 @@ import React, { useState, useEffect } from 'react'
 
 
 function Testimonials() {
-
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex(prevIndex => (prevIndex + 1) % testimonialsData.length);
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []);
-
     const testimonialsData = [
         {
             text: "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That's how I would describe Jeramy and his team at The Lorem Ipsum Company..",
@@ -35,33 +24,71 @@ function Testimonials() {
             name: "Alice Johnson"
         },
     ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex((prevIndex) => (prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1));
+    //     }, 2000);
+
+    //     return () => clearInterval(interval);
+    // }, [testimonialsData.length]);
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1));
+    };
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonialsData.length - 1 : prevIndex - 1));
+    };
     return (
         <div className='pt-[116px]'>
             <div className='max-w-[1200px] mx-auto px-6'>
-                <div className='flex'>
-                    <div className='w-1/2'>
-                        <h2 className='text-4xl font-bold mb-10'>
+                <div className='flex flex-wrap md:flex-nowrap gap-[79px]'>
+                    <div className='w-full md:w-1/2 '>
+                        <h2 className='text-[38px] font-bold mb-[21px] text-customcol'>
                             Testimonials
                         </h2>
-                        <div className='relative'>
-                            <div className='absolute inset-0 flex justify-center items-center'>
+                        <div className="relative overflow-hidden">
+                            <div
+                                className="flex transition-transform duration-500 ease-in-out"
+                                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                            >
                                 {testimonialsData.map((testimonial, index) => (
                                     <div
                                         key={index}
-                                        className={`transition-opacity duration-500 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'} absolute inset-0 flex flex-col justify-center items-center`}
+                                        className="w-full flex-shrink-0 mb-4"
                                     >
-                                        <div className='bg-white p-6 rounded-lg shadow-md max-w-md w-full'>
-                                            <p className='mb-4 text-gray-700'>{testimonial.text}</p>
-                                            <div className='flex items-center'>
-                                                <img src={testimonial.image} alt={testimonial.name} className='w-12 h-12 rounded-full mr-4' />
+                                        <div className=' mx-auto'>
+                                            <p className='mb-[26px] text-lablecolor font-normal  text-[22px]'>{testimonial.text}</p>
+                                            <div className='flex items-center '>
+
+                                                <img src={testimonial.image} alt={testimonial.name} className='w-[55px] h-[55px] rounded-full mr-[25px]' />
                                                 <div>
-                                                    <div className='flex items-center'>
+                                                    <div className='flex items-center gap-[1px]'>
                                                         {Array.from({ length: testimonial.stars }).map((_, i) => (
-                                                            <span key={i} className='text-yellow-500'>&#9733;</span>
+                                                            <span key={i} className=' text-customblue w-[12px] h-[12px] '>&#9733;</span>
                                                         ))}
                                                     </div>
-                                                    <p className='mt-2 text-gray-800 font-semibold'>{testimonial.name}</p>
+                                                    <div className='flex gap-[213px]  '>
+                                                        <div>
+                                                            <p className='font-medium text-[21px] text-customcol'>{testimonial.name}</p>
+                                                        </div>
+
+                                                        <div className="flex justify-center  gap-[16px]">
+                                                            <button onClick={handlePrev} >
+                                                                <img src='/Icons/right-arrow (2) 1.svg' className="transform rotate-180" />
+                                                            </button>
+                                                            <button onClick={handleNext}>
+                                                                <img src='/Icons/right-arrow (2) 1.svg' />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -69,8 +96,8 @@ function Testimonials() {
                             </div>
                         </div>
                     </div>
-                    <div className='w-1/2 flex justify-center items-center'>
-                        <img src='Icons/testimonials.jpg' alt='Testimonials' className='rounded-lg shadow-md' />
+                    <div className='w-full md:w-1/2 flex justify-center items-center '>
+                        <img src='Icons/testimonials.jpg' alt='Testimonials' />
                     </div>
                 </div>
             </div>
@@ -80,33 +107,3 @@ function Testimonials() {
 
 export default Testimonials
 // https://svgshare.com/i/16M7.svg
-/* <div className='pt-[116px]'>
-<div className='max-w-[1200px] mx-auto px-6'>
-    <div className='flex '>
-        <div>
-            <h2>
-                Testimonials
-            </h2>
-            <div>
-                <p>
-                    lorem
-                </p>
-                <div>
-                    <img></img>
-                    <div>
-                        <span>star</span>
-                        <p>name</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div>
-            <img src='Icons\testimonials.jpg'></img>
-        </div>
-    </div>
-
-</div>
-
-</div> */

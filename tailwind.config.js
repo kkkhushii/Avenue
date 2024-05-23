@@ -20,7 +20,8 @@ module.exports = {
         customcol: 'rgba(16, 45, 71, 1)',
         customblue: 'rgba(47, 115, 242, 1)',
         lablecolor: 'rgba(84, 117, 147, 1)',
-        colorbg: 'rgba(192, 213, 251, 1)'
+        colorbg: 'rgba(192, 213, 251, 1)',
+        grayclr: 'rgba(172, 188, 202, 1)'
       },
       boxShadow: {
         customboxshadow: '0px 4px 50px 0px rgba(47, 115, 242, 0.15)',
